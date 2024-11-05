@@ -1,0 +1,1214 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: arial;
+}
+.nav
+{
+    display: flex;
+    width: 99%;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-inline: 10px;
+    height: 9vh;
+    text-align: center;
+    align-items: center;
+    background: rgba(163, 159, 159, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid transparent;
+    color: rgb(247, 239, 239);
+    position: fixed;
+    z-index: 100px;
+}
+.nav div
+{
+    width: 40%;
+}
+.logo
+{
+    text-align: start;
+}
+.logo .job
+{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(108, 152, 153);
+}
+.logo .sure
+{
+    font-size: 35px;
+    font-family: ink free;
+}
+.links 
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.links button
+{
+    position: relative;
+    background: transparent;
+    color:whitesmoke;
+    border: none;
+    margin-inline: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.links button::before
+{
+    content: '';
+    position: absolute;
+    top: 22px;
+    width: 0%;
+    height: 2px;
+    background: rgb(168, 223, 226);
+    border-radius: 20px;
+}
+.links button:hover::before
+{
+    transition: .3s;
+    width: 100%;
+}
+.last
+{
+    text-align: end;
+}
+.last .log
+{
+    background: rgb(165, 209, 211);
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.last .sign
+{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 15px;
+    padding: 14px;
+    border-radius: 10px;
+}
+.nav_cover
+{
+    height: 9.9vh;
+    background: rgba(134, 134, 134, 0.98);
+    width: 99%;
+}
+
+/* search bar */
+
+.search_bar
+{
+    height: 70px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 110%;
+    top: -130px;
+    right: 50%;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(8, 19, 39);
+    opacity: .9;
+
+}
+ .search_bar i
+{
+    width: 10%;
+    margin-left: 10px;
+} 
+.search_bar .left-1
+{
+    width: 45%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+}
+.search_bar 
+{
+    box-shadow: 5px 5px 10px 0px rgb(19, 13, 73);
+}
+.search_bar .right-1
+{
+    width: 45%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+}
+
+.search_bar button
+{
+    width: 8%;
+    margin-right: 5px;
+    background-color: rgb(0, 148, 153);
+    color: white;
+    border: none;
+    padding-block: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.search_bar button:hover
+{
+    transition: .3s;
+    background: rgb(0, 110, 114);
+}
+.left-1 input
+{
+    height: 8vh;
+    width: 77%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+}
+.right-1 input
+{
+    height: 8vh;
+    width: 72.5%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+.search_bar .line
+{
+    width: 1px;
+    height: 30px;
+    background: rgb(189, 188, 188);
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+/* hero starts */
+
+.hero
+{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+.hero .right
+{
+    width: 50%;
+    background: rgba(32,32,32,1);
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px dashed rgb(0, 148, 153);
+}
+.hero .left
+{
+    width: 50%;
+    background: rgb(0, 148, 153);
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-left: 3px solid rgba(34,34,34,1);
+}
+.left h2
+{
+    font-size: 50px;
+}
+.left p
+{
+    width: 80%;
+}
+.hero .job
+{
+    font-size: 80px;
+    color: rgb(0, 148, 153);
+    font-weight: bold;
+}
+.hero .sure
+{
+    font-size: 80px;
+    font-family: ink free;
+    color: white;
+}
+
+.main
+{
+    width: 100%;
+    text-align: center;
+    background: rgba(34,34,34,1);
+    border-top: 3px solid yellow;
+}
+.main .all
+{
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.all .arr
+{
+    margin-right: 10px;
+}
+.all:hover .arr
+{
+    transition: .5s;
+    color: dodgerblue;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+.all:hover
+{
+    transition: .5s;
+    border: 2px solid dodgerblue;
+    color: dodgerblue;
+    letter-spacing: .5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.comp
+{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comp .job
+{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 148, 153);
+}
+.comp .sure
+{
+    font-size: 40px;
+    font-family: ink free;
+}
+.divider
+{
+    width: 5%;
+    height: 10px;
+    background: rgb(0, 148, 153);
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.trusties
+{
+    display: flex;
+    width: 100%;
+    background: transparent;
+    height: 100vh;
+    flex-direction: column;
+}
+.trusties .row
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.row .item
+{
+    width: auto;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 20px;
+    color: white;
+    height: auto;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.item img
+{
+    height: 150px;
+}
+.row .item:hover img
+{
+    transition: .5s ease;
+    filter: drop-shadow(0 0 0.75rem dodgerblue);
+}
+.menu
+{
+    display: none;
+}
+
+.sologans
+{
+    height: 110vh;
+    background: rgba(34,34,34,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.t_row
+{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.dialogue
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 85%;
+    background: white;
+    /* margin: 20px; */
+    border-radius: 50px;
+}
+.dialogue .left
+{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.dialogue .right
+{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dialogue img
+{
+    height: auto;
+    border-radius: 50px;
+}
+.dialogue h2
+{
+    display: flex;
+    font-family: ink free;
+    flex-direction: column;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 1%;
+}
+.dialogue p
+{
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 1%;
+}
+
+.footer
+{
+    width: 100%;
+    height: 50vh;
+    background: rgb(0, 110, 114);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 3px solid white;
+}
+.footer .column
+{
+    width: 20%;
+    height: 60%;
+    border-right: 1px solid white;
+
+}
+.column button
+{
+    
+    font-size: 15px;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.column h2
+{
+    color: white;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.column hr
+{
+    width: 18%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    height: 2px;
+    background: yellow;
+    border: none;
+    border-radius: 20px;
+}
+.column span
+{
+    position: relative;
+    right: 10px;
+    opacity: 0;
+}
+.column button:hover
+{
+    transition: .3s;
+}
+.column button:hover span
+{
+    transition: .3s;
+    display: inline-block;
+    color: yellowgreen;
+    right: 0px;
+    font-size: 15px;
+    opacity: 1;
+}
+.column i
+{
+    margin: 10px;
+    font-size: 20px;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+.column i:hover
+{
+    transition: .5s;
+    transform: rotateZ(360deg);
+    background: white;
+    color: rgb(0, 110, 114);
+}
+details
+{
+    display: none;
+    opacity: 0;
+}
+.column:hover hr
+{
+    transition: .5s;
+    width: 33%;
+}
+/* RESPONSIVE DESIGN */
+
+
+
+@media (max-width: 600px) {
+   html , body
+    {
+        width: 100vw;
+        overflow-x: clip;
+    }
+    details
+{
+    display: block;
+    opacity: 1;
+}
+    .nav
+{
+    display: none;
+}
+.search_bar
+{
+    display: none;
+}
+.hero .job
+{
+    font-size: 22px;
+}
+
+.res_footer
+{
+    display: none;
+}
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(34,34,34,1);
+}
+details
+{
+    color: white;
+    background: rgba(34,34,34,1);
+    width: 100%;
+}
+summary
+{
+    /* margin-bottom: 10px; */
+    border: 2px solid white;
+    padding: 20px;
+    width: 85%;
+    border-bottom: none;
+}
+.column
+{
+    display: none;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.footer button
+{
+    
+    font-size: 15px;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.hero
+{
+    height: 88vh;
+    width: 100%;
+    display: flex;
+}
+.hero .right
+{
+    width: 40%;
+    background: rgba(34,34,34,1);
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px dashed rgb(0, 148, 153);
+}
+.hero .left
+{
+    width: 60%;
+    background: rgb(0, 148, 153);
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-left: 3px solid rgba(34,34,34,1);
+}
+
+
+.hero .job
+{
+    font-size: 35px;
+}
+
+.hero .sure
+{
+    font-size: 35px;
+}
+.hero .left h2
+{
+    font-size: 30px;
+    margin: 0%;
+}
+.hero .left p
+{
+    text-align: start;
+}
+.main
+{
+    height: 40vh;
+}
+.comp
+{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+}
+.comp .job
+{
+    font-size: 25px;
+}
+.comp .sure
+{
+    font-size: 25px;
+}
+.divider
+{
+    width: 50px;
+}
+.trusties .row
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 0px;
+}
+.row .item
+{
+    width: 30%;
+    height: auto;
+    margin-top: 10px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.row img
+{
+    height: 50px;
+    width: 50px;
+}
+
+
+/* nav bar */
+.menu_btn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu {
+    /* position: fixed; */
+    display: inline-block;
+    width: 100%;
+  }
+  .nav_cover
+  {
+    height: 3vh;
+  }
+  .resp-nav
+  {
+    position: fixed;
+    height: 7vh;
+    top: 0px;
+    width: 100%;
+    background: rgba(34,34,34,1);
+  }
+  .menu-content {
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    display: none;
+    position: absolute;
+    font-size: 15px;
+    width: 100%;
+    height: 99vh;
+    backdrop-filter: blur(20px);
+    background-color: rgba(34,34,34,.5);
+    text-align: center;
+    z-index: 1;
+  }
+  .l1
+  {
+    transition: .5s;
+      height: 5px;
+      width: 35px;
+      background: rgb(0, 110, 114);
+      border-radius: 10px;
+      position: relative;
+  }
+  .l2
+  {
+    transition: .5s;
+    position: relative;
+      margin-top: 5px;
+      height: 5px;
+      width: 35px;
+      background: rgb(0, 110, 114);
+      border-radius: 10px;
+  }
+  .l3
+  {
+    transition: .5s;
+      margin-top: 5px;
+      height: 5px;
+      width: 35px;
+      background: rgb(0, 110, 114);
+      border-radius: 10px;
+  }
+  .menu-content button
+  {
+      background: transparent;
+      position: relative;
+      border: none;
+      margin: 10px;
+      color: white;
+      /* width: 100%; */
+      padding-bottom: 10px;
+      font-size: 30px;
+  }
+  .menu-content button::before
+{
+    content: '';
+    position: absolute;
+    top: 35px;
+    width: 0%;
+    height: 4px;
+    background: rgb(0, 148, 153);
+    border-radius: 20px;
+}
+.menu-content button:hover::before
+{
+    transition: .3s;
+    width: 100%;
+}
+.si_lo
+{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.si_lo .res_log
+{
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: rgb(0, 148, 153);
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    margin-right: 20px;
+    height: 23px;
+}
+
+
+.si_lo .res_sign
+{
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: white;
+    background: white;
+    color: rgb(0, 148, 153);
+    padding: 20px;
+    font-size: 20px;
+}
+.si_lo a
+{
+    /* margin-top: 20px; */
+    text-decoration: none;
+}
+hr
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.si_lo
+{
+    display: flex;
+    height: 20%;
+}
+.sologans
+{
+    height: 150vh;
+}
+.t_row
+{
+    width: 100%;
+    margin: 0;
+    height: 80%;
+    background: rgba(34,34,34,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.dialogue
+{
+    padding: 0%;
+    padding-bottom: 20px;
+    height: 30%;
+    margin: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.dialogue h2
+{
+    display: flex;
+    font-family: ink free;
+    flex-direction: column;
+    font-size: 15px;
+    margin-top: 1%;
+}
+.dialogue p
+{
+    font-size: 13px;
+    margin-top: 0%;
+}
+.dialogue img
+{
+    height: 100px;
+    margin: none;
+}
+
+}
+
+
+
+
+
+/* ABOUT SECTION OF CSS */
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 148, 153);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:  rgb(49, 45, 45);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Section */
+#about {
+    padding: 40px 0;
+    background-color: rgb(0, 148, 153);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:rgb(0, 148, 153);
+}
+
+#about h3 {
+    font-size: 24px;
+    color: rgb(0, 148, 153);
+    margin-top: 20px;
+}
+
+#about p, #about ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color:white;
+    margin-bottom: 15px;
+}
+
+#about ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+#about ul li {
+    margin-bottom: 5px;
+}
+
+#about a {
+    color:rgb(0, 148, 153);
+    text-decoration: none;
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    #about h2 {
+        font-size: 28px;
+    }
+
+    #about h3 {
+        font-size: 22px;
+    }
+}
+
+
+/* contact page of css */
+/* Contact Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 143,153);
+    margin: 0;
+    padding: 0;
+}
+
+.container-1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: rgb(49, 45, 45);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+    padding: 40px 0;
+    background-color: rgb(0, 143,153);
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);  /* Adjusted to be visible */
+}
+
+#contact p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 20px; /* Reduced font size for better readability */
+    margin-bottom: 5px;
+    margin-left: 20px;
+    color: rgb(0, 143,153);
+}
+
+.form-group input, .form-group textarea {
+    width: 95%;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #64b5f6;
+    outline: none;
+    background-color: #fff;
+}
+
+button[type="submit"] {
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(0, 143,153);
+    border: none;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #42a5f5;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .container-1 {
+        width: 90%; /* Adjust container width for smaller screens */
+        padding: 20px;
+    }
+
+    #contact h2 {
+        font-size: 28px;
+    }
+
+    .form-group label {
+        font-size: 18px; /* Adjust label font size for smaller screens */
+    }
+
+    .form-group input, .form-group textarea {
+        width: 100%; /* Full width input fields for better mobile UX */
+        margin-left: 0; /* Remove left margin for mobile */
+    }
+
+    button[type="submit"] {
+        width: 100%; /* Full-width button on smaller screens */
+        margin-left: 0; /* Center the button */
+    }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+    #contact h2 {
+        font-size: 24px; /* Smaller font for titles */
+    }
+
+    #contact p {
+        font-size: 14px; /* Reduce font size of paragraph for readability */
+    }
+
+    .container-1 {
+        width: 95%; /* Almost full width on smartphones */
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        padding: 12px; /* Slightly reduce padding on buttons */
+        font-size: 16px;
+    }
+}
+
+
+/* code of FAQS */
+
+
+/* FAQs Section Styles */
+#faqs {
+    background-color: rgb(0, 143,153);
+    padding: 40px 0;
+    color: white;
+}
+
+#faqs h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    background-color: rgb(49, 45, 45);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background-color: rgb(0, 143,153);
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background-color: rgb(0, 120, 120);
+}
+
+.faq-icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    background-color: rgb(49, 45, 45);
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    font-size: 16px;
+    padding: 15px;
+    margin: 0;
+    color: white;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #faqs h2 {
+        font-size: 28px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .faq-answer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #faqs h2 {
+        font-size: 24px;
+    }
+
+    .faq-question {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .faq-answer p {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

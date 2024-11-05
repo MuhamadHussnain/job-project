@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.2-web/css/all.min.css">
+    <!-- OWL CAROUSEL -->
+     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title> Jobsure</title>
+</head>
+
+<body onscroll="nav()">
+    <div class="resp-nav">
+        <div class="menu">
+            <button class="menu_btn" onclick="appdiss()">
+                <div class="l1"></div>
+                <div class="l2"></div>
+                <div class="l3"></div>
+            </button>
+            <div class="menu-content">
+                <a href="/index.html" class="active">Home</a><br>
+                <a href="/About.html">About</a><br>
+                <a href="/Contact.html">Contact</a><br>
+                <a href="/FAQs.html">FAQs</a><br>
+                
+                <hr>
+                <div class="si_lo">
+                    <a href="./login.html"><span class="res_log">LogIn</span></a><br>
+                    <a href="./signUp.html"><span class="res_sign">SignUp</span></a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="nav">
+            <div class="logo">
+                <span class="job">Job</span><span class="sure">Sure</span>
+            </div>
+            <div class="links">
+             <a href="/"><button> Home</button></a>
+           <a href="./About.html"><button>About </button></a>     
+              <a href="./Contact.html"><button>Contact</button></a>  
+              <a href="./FAQs.html"><button>FAQs</button></a>  
+            </div>
+            <div class="last">
+                <a href="./login.html"><button class="log">LogIn</button></a>
+                <a href="./signUp.html"><button class="sign">SignUp</button></a>
+            </div>
+        </div>
+        <div class="nav_cover"></div>
+    </section>
+  
+
+
+    <section id="faqs">
+        <div class="container-1">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is JobSure and how does it work? 
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>JobSure is an online job portal where employers post job listings and job seekers can find opportunities. It allows for easy communication and job application management.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I create an account? 
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>To create an account, click the 'SignUp' button on the homepage, fill out the necessary details, and confirm your email address.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How can I apply for a job? 
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Once logged in, browse through available job listings. When you find a suitable job, click 'Apply' and upload your resume and cover letter.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is there a fee to use JobSure? 
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>No, creating an account and applying for jobs on JobSure is free for job seekers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="footer">
+        <div class="column">
+            <h2>
+                Company
+            </h2>
+            <hr>
+            <a href="#"><button><span>&rarr;</span> Home</button></a><br>
+            <a href="#"><button><span>&rarr;</span> About</button></a><br>
+            <a href="#"><button><span>&rarr;</span> Contact Us</button></a><br>
+            <a href="#"><button><span>&rarr;</span> Terms and conditions</button></a><br>
+        </div>
+        <div class="column" style="border: none;">
+            <h2>                                                                                                                                                                                                                                                    
+                Get Help
+            </h2>
+            <hr>
+            <a href="#"><button><span>&rarr;</span> FAQs</button></a><br>
+            <a href="#"><button><span>&rarr;</span> Customer Care</button></a><br>
+            <a href="#"><button><span>&rarr;</span> Help line</button></a><br>
+            <a href="#"><button><span>&rarr;</span> Data security</button></a><br>
+        </div>
+        <div class="column res_footer" style="border: none;">
+        </div>
+        <div class="column" style="border: none;">
+            <h2>Follow Us</h2>
+            <hr>
+            <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-x-twitter"></i><i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <details>
+            <summary class="s1" onclick="selected_s1()">
+                Company 
+            </summary><hr>
+            <button><a href="#">Home</a></button><br><hr>
+            <button><a href="#">About Us</a></button><br><hr>
+            <button><a href="#">Contact</a></button><br><hr>
+            <button><a href="#">Terms and conditions</a></button><hr>
+        </details>
+        <details>
+            <summary class="s2" onclick="selected_s2()">
+                Get help
+            </summary><hr>
+            <button><a href="#">FAQs</a></button><br><hr>
+            <button><a href="#">Customer care</a></button><br><hr>
+            <button><a href="#">Help line</a></button><br><hr>
+            <button><a href="#">Data security</a></button><hr>
+        </details>
+        <details>
+            <summary style="border-bottom: 2px solid white;" class="s3" onclick="selected_s3()">
+                Follow Us
+            </summary><hr>
+            <button><a href="#">Instagram</a></button><br><hr>
+            <button><a href="#">Facebook</a></button><br><hr>
+            <button><a href="#">Twitter</a></button><br><hr>
+            <button><a href="#">Linked in</a></button><hr>
+        </details>
+    </div>
+</section>  
+<script src="./script.js"></script>
+</body>
+
+</html>

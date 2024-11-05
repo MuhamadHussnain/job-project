@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>Login to Jobsure</title>
+    <style>
+        body
+        {
+          margin: 0%;
+          padding: 0%;
+          font-family: sans-serif;
+          background: url(./img/city-top-view-skyscrapers-building-600nw-774140332.webp);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          backdrop-filter: blur(10px);
+          height: 100vh;
+            
+        }
+        .main
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .abc
+        {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #1a1a1ab7;
+  color: #fff;
+  border: 1px solid #333;
+  width: 100%;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #00bfff;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #00bfff;
+}
+
+.message, 
+.signin {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #00bfff;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #333;
+  color: #fff;
+  width: 95%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+.form label .input1 {
+  background-color: #333;
+  color: #fff;
+  width: 90%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: #00bfff;
+  top: 5px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+.form label .input1 + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input1:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input1:focus + span,
+.form label .input1:valid + span {
+  color: #00bfff;
+  top: 10px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input1 {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #05b6f1;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #00bfff96;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+  body
+  {
+    overflow: hidden;
+  }
+    .abc
+  {
+    width: 90%;
+  }
+  .main
+  {
+    height: 90vh;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="abc">
+            <form class="form">
+                <p class="title">Login </p>
+                <p class="message">Login to get full access to our app. </p>
+                <label>
+                    <input class="input" name="email" type="email" placeholder="" required="">
+                    <span>Email</span>
+                </label> 
+                    
+                <label>
+                    <input class="input" name="password" type="password" placeholder="" required="">
+                    <span>Password</span>
+                </label>
+                
+                <button class="submit">Login</button>
+                <p class="signin">Don't have an acount ? <a href="./signUp.html">SignUp</a> </p>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

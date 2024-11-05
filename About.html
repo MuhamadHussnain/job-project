@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.2-web/css/all.min.css">
+    <!-- OWL CAROUSEL -->
+     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title> Jobsure</title>
+</head>
+
+<body onscroll="nav()">
+    <div class="resp-nav">
+        <div class="menu">
+            <button class="menu_btn" onclick="appdiss()">
+                <div class="l1"></div>
+                <div class="l2"></div>
+                <div class="l3"></div>
+            </button>
+            <div class="menu-content">
+                <a href="./index.html" class="active">Home</a><br>
+                <a href="./About.html">About</a><br>
+                <a href="./Contact.html">Contact</a><br>
+                <a href="./FAQs.html">FAQs</a><br>
+                
+                <hr>
+                <div class="si_lo">
+                    <a href="./login.html"><span class="res_log">LogIn</span></a><br>
+                    <a href="./signUp.html"><span class="res_sign">SignUp</span></a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section>
+        <div class="nav">
+            <div class="logo">
+                <span class="job">Job</span><span class="sure">Sure</span>
+            </div>
+            <div class="links">
+             <a href="/"><button> Home</button></a>
+           <a href="./About.html"><button>About </button></a>     
+              <a href="./Contact.html"><button>Contact</button></a>  
+              <a href="./FAQs.html"><button>FAQs</button></a>  
+            </div>
+            <div class="last">
+                <a href="./login.html"><button class="log">LogIn</button></a>
+                <a href="./signUp.html"><button class="sign">SignUp</button></a>
+            </div>
+        </div>
+        <div class="nav_cover"></div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to [Website Name], your number one source for all things jobs and career opportunities. We're dedicated to providing you the very best of job listings, with an emphasis on reliability, transparency, and user-friendly experience.</p>
+            
+            <h3>Our Mission</h3>
+            <p>Our mission is to empower job seekers to find their dream jobs and help employers connect with the best talent in the industry. We aim to make the job search process as easy and effective as possible.</p>
+    
+            <h3>What We Do</h3>
+            <p>We provide job listings from various industries, career advice, resume-building tools, and a platform to connect job seekers with employers.</p>
+    
+            <h3>Our Vision</h3>
+            <p>Our vision is to become the leading job search platform known for connecting individuals to meaningful and impactful careers.</p>
+    
+            <h3>Our Values</h3>
+            <ul>
+                <li>Integrity</li>
+                <li>Transparency</li>
+                <li>Innovation</li>
+                <li>User-centricity</li>
+            </ul>
+    
+            <h3>Meet the Team</h3>
+            <p>We are a group of passionate individuals dedicated to improving the way people find jobs and employers find talent.</p>
+    
+            <h3>Contact Us</h3>
+            <p>If you have any questions or suggestions, feel free to reach out to us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+        </div>
+    </section>
+  
+
+    <div class="footer">
+        <div class="column">
+            <h2>
+                Company
+            </h2>
+            <hr>
+            <a href="#"><button><span>&rarr;</span> Home</button></a><br>
+            <a href="#"><button><span>&rarr;</span> About</button></a><br>
+            <a href="#"><button><span>&rarr;</span> Contact Us</button></a><br>
+            <a href="#"><button><span>&rarr;</span> Terms and conditions</button></a><br>
+        </div>
+        <div class="column" style="border: none;">
+            <h2>                                                                                                                                                                                                                                                    
+                Get Help
+            </h2>
+            <hr>
+            <a href="#"><button><span>&rarr;</span> FAQs</button></a><br>
+            <a href="#"><button><span>&rarr;</span> Customer Care</button></a><br>
+            <a href="#"><button><span>&rarr;</span> Help line</button></a><br>
+            <a href="#"><button><span>&rarr;</span> Data security</button></a><br>
+        </div>
+        <div class="column res_footer" style="border: none;">
+        </div>
+        <div class="column" style="border: none;">
+            <h2>Follow Us</h2>
+            <hr>
+            <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-x-twitter"></i><i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <details>
+            <summary class="s1" onclick="selected_s1()">
+                Company 
+            </summary><hr>
+            <button><a href="#">Home</a></button><br><hr>
+            <button><a href="#">About Us</a></button><br><hr>
+            <button><a href="#">Contact</a></button><br><hr>
+            <button><a href="#">Terms and conditions</a></button><hr>
+        </details>
+        <details>
+            <summary class="s2" onclick="selected_s2()">
+                Get help
+            </summary><hr>
+            <button><a href="#">FAQs</a></button><br><hr>
+            <button><a href="#">Customer care</a></button><br><hr>
+            <button><a href="#">Help line</a></button><br><hr>
+            <button><a href="#">Data security</a></button><hr>
+        </details>
+        <details>
+            <summary style="border-bottom: 2px solid white;" class="s3" onclick="selected_s3()">
+                Follow Us
+            </summary><hr>
+            <button><a href="#">Instagram</a></button><br><hr>
+            <button><a href="#">Facebook</a></button><br><hr>
+            <button><a href="#">Twitter</a></button><br><hr>
+            <button><a href="#">Linked in</a></button><hr>
+        </details>
+    </div>
+</section>  
+</body>
+
+</html>
